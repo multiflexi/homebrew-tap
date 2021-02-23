@@ -6,7 +6,7 @@ class Libxcb < Formula
 
   depends_on "pkg-config" => :build
   depends_on "xcb-proto" => :build
-  depends_on :x11
+  depends_on "libx11"
 
   def install
     system "./configure", "--disable-debug",
